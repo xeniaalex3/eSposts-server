@@ -4,7 +4,7 @@
     "description": "",
     "main": "src/server.js",
     "scripts": {
-        "build": "npx tsc",
+        "build": "tsup src",
         "start": "node dist/server.js",
         "dev": "tsnd src/server.ts"
     },
