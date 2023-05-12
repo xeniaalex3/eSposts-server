@@ -7,10 +7,10 @@
         "node": "18"
     },
     "scripts": {
-        "build": "tsup src",
         "start": "node dist/server.js",
         "dev": "tsnd src/server.ts",
-        "vercel-build": "npm ci && npx prisma migrate deploy && YOUR_BUILD_COMMAND"
+        "vercel-build": "npm run build",
+        "build": "npm ci && prisma migrate deploy && YOUR_BUILD_COMMAND"
     },
     "repository": {
         "type": "git",
