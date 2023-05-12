@@ -94,8 +94,6 @@ app.get('/ads/:id/discord', async (request, response) => {
   })
 })
 
-const port = process.env.PORT ? Number(process.env.PORT) : 3333;
 
-app.listen(port, '0.0.0.0', () => {
-  console.log('server running');
-});
+
+app.listen(3333);
