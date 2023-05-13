@@ -9,7 +9,7 @@
     "scripts": {
         "start": "node dist/server.js",
         "dev": "tsnd src/server.ts",
-        "vercel-build": "npx prisma migrate deploy"
+        "vercel-build": "npm ci && npx prisma migrate deploy"
 
     },
     "repository": {
