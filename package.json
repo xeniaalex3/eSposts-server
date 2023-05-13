@@ -8,8 +8,7 @@
     },
     "scripts": {
         "start": "node dist/server.js",
-        "dev": "tsnd src/server.ts",
-        "build": "tsup src"
+        "dev": "tsnd src/server.ts"
 
     },
     "repository": {
