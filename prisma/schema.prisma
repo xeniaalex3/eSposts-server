@@ -8,8 +8,6 @@ generator client {
 datasource db {
   provider = "postgresql"
   url = env("DATABASE_URL") 
-  directUrl = env("DIRECT_URL")
-  
 }
 
 model Game {
@@ -30,7 +28,7 @@ model Ad {
   hourEnd         Int
   useVoiceChannel Boolean
   createAt        DateTime @default(now())
-   updatedAt      DateTime @updatedAt
+  updatedAt      DateTime @updatedAt
 
   game Game @relation(fields: [gameId], references: [id])
 }
